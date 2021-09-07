@@ -34,3 +34,10 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# Other
+.DS_Store
+
+# Rspec
+spec/examples.txt
+/coverage/

@@ -1,0 +1,73 @@
+AllCops:
+  DisplayCopNames: true
+  NewCops: enable
+  Exclude:
+    - db/**/*
+    - script/**/*
+    - bin/**/*
+    - tmp/**/*
+    - config/initializers/**/*
+    - config/environments/**/*
+    - config/application.rb
+    - test/**/*
+    - spec/**/*
+    - node_modules/**/*
+
+# Commonly used screens these days easily fit more than 80 characters.
+Layout/LineLength:
+  Max: 120
+
+# Relax the Assignment Branch Condition rule a bit
+Metrics/AbcSize:
+  Max: 60
+
+# Too short methods lead to extraction of single-use methods, which can make
+# the code easier to read (by naming things), but can also clutter the class
+Metrics/MethodLength:
+  Max: 40
+
+# The guiding principle of classes is SRP, SRP can't be accurately measured by LoC
+Metrics/ClassLength:
+  Max: 1500
+
+Style/Documentation:
+  Include:
+    - app/models/**/*
+    - lib/**/*
+
+# I don't see a benefit to forcing empty methods onto one line
+Style/EmptyMethod:
+  Exclude:
+    - app/**/*
+
+# Pending Cops:
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Style/SlicingWithRange:
+  Enabled: true
+
+Style/StringConcatenation:
+  Enabled: false
+

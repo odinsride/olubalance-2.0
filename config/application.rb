@@ -27,7 +27,7 @@ module Olubalance
     config.load_defaults 6.1
 
     # olubalance Version
-    config.version = "2.0.0"
+    config.version = '2.0.0'
 
     # Configuration for the application, engines, and railties goes here.
     #
@@ -43,5 +43,15 @@ module Olubalance
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.generators do |g|
+      g.test_framework :rspec,
+                       fixtures: false,
+                       view_specs: false,
+                       helper_specs: false,
+                       routing_specs: false,
+                       request_specs: false,
+                       controller_specs: false
+    end
   end
 end
