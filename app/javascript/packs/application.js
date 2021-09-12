@@ -7,8 +7,10 @@ import "@hotwired/turbo-rails"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+import "typeface-mulish"
 import "@fortawesome/fontawesome-free/js/all"
 import "stylesheets/application"
+const images = require.context("images", true)
 
 ActiveStorage.start()
 
