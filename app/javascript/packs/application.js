@@ -7,6 +7,9 @@ import "@hotwired/turbo-rails"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+import "@fortawesome/fontawesome-free/js/all"
+import "stylesheets/application"
+
 ActiveStorage.start()
 
 import "controllers"
